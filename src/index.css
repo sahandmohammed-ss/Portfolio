@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cosmic Space Theme - Deep navy/black background */
+    --background: 228 20% 6%;
+    --foreground: 0 0% 98%;
+
+    /* Glassmorphic cards */
+    --card: 228 20% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 228 20% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Electric cyan primary */
+    --primary: 188 100% 50%;
+    --primary-foreground: 228 20% 6%;
+
+    /* Subtle secondary */
+    --secondary: 228 20% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 228 20% 18%;
+    --muted-foreground: 0 0% 70%;
+
+    /* Neon magenta accent */
+    --accent: 330 100% 52%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Coral destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 228 20% 25%;
+    --input: 228 20% 18%;
+    --ring: 188 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Gradients and special effects */
+    --gradient-cosmic: linear-gradient(
+      135deg,
+      hsl(188 100% 50% / 0.2),
+      hsl(330 100% 52% / 0.2)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(188 100% 50%),
+      hsl(330 100% 52%)
+    );
+    --gradient-coral: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 100% 50%));
+
+    /* Glows */
+    --glow-cyan: 0 0 20px hsl(188 100% 50% / 0.5);
+    --glow-magenta: 0 0 20px hsl(330 100% 52% / 0.5);
+    --glow-coral: 0 0 20px hsl(0 84% 60% / 0.5);
+    --glow-emerald: 0 0 20px hsl(160 84% 39% / 0.5);
+    --glow-indigo: 0 0 20px hsl(238 100% 67% / 0.5);
+
+    /* Glass effect */
+    --glass-bg: hsl(228 20% 12% / 0.4);
+    --glass-border: hsl(0 0% 100% / 0.1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+  }
+
+  .glow-cyan {
+    box-shadow: var(--glow-cyan);
+  }
+
+  .glow-magenta {
+    box-shadow: var(--glow-magenta);
+  }
+
+  .glow-coral {
+    box-shadow: var(--glow-coral);
+  }
+
+  .glow-emerald {
+    box-shadow: var(--glow-emerald);
+  }
+
+  .glow-indigo {
+    box-shadow: var(--glow-indigo);
+  }
+
+  .gradient-cosmic {
+    background: var(--gradient-cosmic);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-coral {
+    background: var(--gradient-coral);
+  }
+
+  /* Fixed glow for Hero title */
+  .text-glow-hero {
+    text-shadow: 0 0 150px hsl(var(--primary) / 0.6);
+  }
+
+  /* Fixed glow for other titles */
+  .text-glow-subtle {
+    text-shadow: 0 0 53px hsl(var(--primary) / 0.4);
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+}
