@@ -39,21 +39,21 @@ export const ProjectCard = ({ title, description, tags, image, demoUrl, githubUr
         ref={cardRef}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        className="glass rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 hover:glow-cyan preserve-3d h-full"
+        className="bg-card/60 border border-white/10 rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 hover:glow-cyan preserve-3d h-full"
         style={{
           transform: `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
           transition: 'transform 0.1s ease-out',
         }}
       >
-        <div className="relative h-40 sm:h-48 overflow-hidden">
+        <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
           <img
             src={image}
             alt={title}
-            loading="lazy"
             decoding="async"
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+            style={{ imageRendering: 'auto' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-40" />
         </div>
 
         <div className="p-4 sm:p-6 flex flex-col">

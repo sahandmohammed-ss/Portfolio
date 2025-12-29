@@ -193,7 +193,8 @@ export const Contact = () => {
                   <span className="whitespace-nowrap">Send Email</span>
                 </button>
                 <a
-                  href="#"
+                  href="/CV_Web.pdf"
+                  download="Sahand_Mohammed_CV.pdf"
                   className="flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-xl glass border-2 border-primary/50 text-foreground font-semibold text-base sm:text-lg hover:border-primary hover:scale-105 transition-all duration-300 w-full sm:w-auto justify-center group"
                 >
                   <Download className="w-4 h-4 sm:w-5 sm:h-5 group-hover:text-primary transition-colors" />
