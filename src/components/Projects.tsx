@@ -2,14 +2,13 @@ import { ProjectCard } from "./ProjectCard";
 
 const projects = [
   {
-    title: "Cosmic Dashboard",
+    title: "BuildPro Construction",
     description:
-      "A real-time analytics dashboard with interactive data visualizations and live updates.",
-    tags: ["React", "D3.js", "TypeScript", "WebSocket"],
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    demoUrl: "#",
-    githubUrl: "#",
+      "A modern, production-ready portfolio website for construction/architecture companies, featuring a homepage, projects showcase, about section, and contact form with smooth animations.",
+    tags: ["Next.js 14", "React 18", "TypeScript", "Framer Motion", "Lenis"],
+    image: "/projects/buildpro.png",
+    demoUrl: "https://buildpro-construction-website.vercel.app/",
+    githubUrl: "https://github.com/sahandmohammed-ss/buildpro-construction-website",
   },
   {
     title: "Neural Commerce",
