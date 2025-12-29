@@ -4,61 +4,11 @@ const projects = [
   {
     title: "BuildPro Construction",
     description:
-      "A modern, production-ready portfolio website for construction/architecture companies, featuring a homepage, projects showcase, about section, and contact form with smooth animations.",
+      "A personal project — a modern, production-ready portfolio website template for construction/architecture companies. Features homepage, projects showcase, about section, and contact form with smooth animations and responsive design.",
     tags: ["Next.js 14", "React 18", "TypeScript", "Framer Motion", "Lenis"],
     image: "/projects/buildpro.png",
     demoUrl: "https://buildpro-construction-website.vercel.app/",
     githubUrl: "https://github.com/sahandmohammed-ss/buildpro-construction-website",
-  },
-  {
-    title: "Neural Commerce",
-    description:
-      "AI-powered e-commerce platform with personalized recommendations and smart search.",
-    tags: ["Next.js", "TensorFlow", "Prisma", "Stripe"],
-    image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Quantum Chat",
-    description:
-      "End-to-end encrypted real-time messaging app with voice and video capabilities.",
-    tags: ["WebRTC", "Socket.io", "React", "Node.js"],
-    image:
-      "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800&h=600&fit=crop",
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Stellar Tracker",
-    description:
-      "Project management tool with Gantt charts, time tracking, and team collaboration.",
-    tags: ["Vue.js", "Firebase", "Tailwind", "Chart.js"],
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Galaxy Finance",
-    description:
-      "Cryptocurrency portfolio tracker with real-time prices and advanced analytics.",
-    tags: ["React", "GraphQL", "Apollo", "Recharts"],
-    image:
-      "https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=800&h=600&fit=crop",
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Nebula Docs",
-    description:
-      "Collaborative documentation platform with markdown support and version control.",
-    tags: ["Next.js", "MDX", "PostgreSQL", "Vercel"],
-    image:
-      "https://images.unsplash.com/photo-1517842645767-c639042777db?w=800&h=600&fit=crop",
-    demoUrl: "#",
-    githubUrl: "#",
   },
 ];
 
