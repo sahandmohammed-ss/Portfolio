@@ -50,8 +50,12 @@ export const ProjectCard = ({ title, description, tags, image, demoUrl, githubUr
             src={image}
             alt={title}
             decoding="async"
-            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-            style={{ imageRendering: 'auto' }}
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 antialiased"
+            style={{ 
+              imageRendering: '-webkit-optimize-contrast',
+              backfaceVisibility: 'hidden',
+              transform: 'translateZ(0)',
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-40" />
         </div>
